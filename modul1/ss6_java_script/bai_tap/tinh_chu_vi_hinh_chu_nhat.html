@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h2> Tính Chu VI Hình Chữ Nhật</h2>
+ <input id="chuvi" oninput="tinhchuvi()" placeholder="Nhập chu vi hình chữ nhật">
+ <button onclick="tinhchuvi()">Tính Chu Vi</button>
+</body>
+ <script>
+ function tinhchuvi() {
+   let ChieuDai = parseFloat(prompt("chieudai"));
+   let ChieuRong = parseFloat(prompt("chieurong"));
+   let chuvi = 2 * (ChieuDai + ChieuRong);
+   alert("chu vi hình chữ nhật là" + chuvi);
+   document.getElementById("ketQua").innerText = "<b> chu vi hình chữ nhật : </b>" + p
+
+ }
+</script>
+</html>
