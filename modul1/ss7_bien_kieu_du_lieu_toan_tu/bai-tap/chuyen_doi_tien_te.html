@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi tiền tệ</title>
+</head>
+<body>
+<h2>Chuển Đổi Tiền Tệ</h2>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th rowspan="2" style="text-align: center">
+            <button type="button" onclick="change()">Convert</button>
+        </th>
+    </tr>
+    <tr>
+
+        <td style="text-align: center">
+            <input type="number" id="money" placeholder="nhập số tiền "/>
+        </td>
+        <td style="text-align: center">
+            <select id="from">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+    </tr>
+    <p style="text-align: center" id="ship"></p>
+</table>
+<script>
+    function change() {
+        let exchange = parseFloat(document.getElementById("money").value);
+        let do1 = document.getElementById("from").value;
+        let do2 = document.getElementById("to").value;
+        let yourMoney;
+        if (do1 == "VND" && do2 == "USD") {
+            meMoney = (exchange / 23000) + "Đô la";
+        } else if (do1 == "USD" && do2 == "VND") {
+            meMoney = (exchange * 23000) + "VND";
+        } else if (do1 == "VND") {
+            meMoney = exchange + "VND";
+        } else {
+            meMoney = exchange + "Đô la";
+        }
+        document.getElementById("ship").innerHTML = "<b>Result</b> = " + meMoney;
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td conspan="4"><input id="window" type="text"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" onclick="nhap(this.value)" value="1"></td>
+        <td> <input type="button" onclick="nhap(this.value)"  value="2"></td>
+        <td> <input type="button" onclick="nhap(this.value)" value="3"></td>
+        <td> <input type="button"  onclick="nhap(this.value)" value="+"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="4"></td>
+        <td> <input type="button" value="5"></td>
+        <td> <input type="button" value="6"></td>
+        <td> <input type="button" value="-"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="7"></td>
+        <td> <input type="button" value="8"></td>
+        <td> <input type="button" value="9"></td>
+        <td> <input type="button" value="*"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="0"></td>
+        <td> <input type="button" value="."></td>
+        <td> <input type="button" value=""></td>
+        <td> <input type="button" value="/"></td>
+    </tr>
+</table>
+<script>
+    function nhap1(){
+        document.getElementById("window").value
+    }
+    function nhap(){
+        let string= document.getElementById("window").value;
+        let result= eval(string))
+    }
+</script>
+</body>
+</html>
