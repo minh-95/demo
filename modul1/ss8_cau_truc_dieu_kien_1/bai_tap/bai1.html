@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cân nặng</title>
+</head>
+<body>
+</body>
+<script>
+    let canNang = parseFloat(+prompt("nhập cân nặng :(kg)"));
+    let chieuCao = parseFloat(+prompt("nhập chiều cao:(m)"));
+    let tinhTong = canNang / (chieuCao ^ 2);
+    if (tinhTong < 18.5){
+        alert(`Underweight ${tinhTong}BMI`);
+    }else if(tinhTong<25.0){
+        alert(`Normal ${tinhTong}BMI`);
+    }else if (tinhTong < 30.0){
+        alert(`Overweight ${tinhTong}BMI`);
+    }else {
+        alert(`Obese ${tinhTong}BMI`);
+    }
+
+
+</script>
+</script>
+</html>
