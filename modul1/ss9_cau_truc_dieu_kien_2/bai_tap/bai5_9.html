@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra xem 3 số thực có phải là một cạnh của tam giác
+    </title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("nhập a"));
+    let b = parseFloat(prompt("nhập b"));
+    let c = parseFloat(prompt("nhập c"));
+    let tamGiac = (a, b, c) >= 0;
+    if (a + b > c || b + c > a || c + b > a) {
+        alert(`tamGiac ${tamGiac} là một cạnh của tam giác`);
+    } else {
+        alert("không phải là cạnh của tam giác");
+    }
+
+</script>
+</body>
+</html>

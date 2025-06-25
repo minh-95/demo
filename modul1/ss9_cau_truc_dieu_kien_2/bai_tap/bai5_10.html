@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chương trình tính giá điện</title>
+</head>
+<body>
+<script>
+    //Tiền điện = Tổng lượng điện tiêu thụ x Đơn giá điện theo bậc.
+    // Trong đó, lượng điện tiêu thụ được tính bằng công thức:
+    // Lượng điện tiêu thụ (kWh) = Công suất (kW) x Thời gian sử dụng (giờ).
+    //Bậc 1 (0-50 kWh): 1.678 đồng/kWh
+    //  Bậc 2 (51-100 kWh): 1.734 đồng/kWh
+    // Bậc 3 (101-200 kWh): 2.014 đồng/kWh
+    let luongDienTieuThu = parseFloat(prompt("nhập số lượng điện tiêu thụ"));
+    let donGiaDienTheoBac;
+    let tienDien;
+    if (luongDienTieuThu <= 50) {
+        alert("thì tính theo bậc 1");
+        donGiaDienTheoBac = 1.678;
+        tienDien = luongDienTieuThu * donGiaDienTheoBac;
+        alert(`số tiền điện phải trả ${tienDien} Việt Nam đồng`);
+    } else if (luongDienTieuThu <= 100) {
+        alert("thì tinh theo bậc 2");
+        donGiaDienTheoBac = 1.734;
+        tienDien = luongDienTieuThu * donGiaDienTheoBac;
+        alert(`số tiền điện phải trả ${tienDien} Việt Nam đồng`);
+    } else if (luongDienTieuThu <= 200) {
+        alert("thì tính theo bậc 3");
+        donGiaDienTheoBac = 2.014;
+        tienDien = luongDienTieuThu * donGiaDienTheoBac;
+        alert(`số tiền điện phải trả ${tienDien} Việt Nam đồng`);
+    } else {
+        alert("tính giá bậc 4")
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi ngân hàng </title>
+</head>
+<body>
+<script>
+    //Tiền lãi hàng tháng = Dư nợ gốc x Lãi suất vay/Thời gian vay
+    //B vay 300 triệu đồng thời hạn trong 12 tháng với mức lãi suất 12%/năm
+
+    // Tiền gốc trả hàng tháng = 300triệu/12 = 25.000.000 đồng
+
+    //  Tiền lãi tháng đầu = (300 triệu x 12%)/12 = 3.000.000 đồng. Tổng số tiền phải trả tháng đầu là 25 triệu + 3 triệu = 28.000.000 đồng.
+
+    //   Tiền lãi tháng thứ 2 = (300 triệu - 25 triệu) x 12%/12 = 2.750.000 đồng. Tổng tiền phải trả tháng thứ 2 là 25 triệu + 2.750.000 = 27.750.000 đồng.
+
+    //   Tiền lãi tháng thứ 3 = (275 triệu - 25 triệu) x 12%/12 = 2.500.000 đồng. Tổng tiền phải trả tháng thứ 3 là 25 triệu + 2,5 triệu = 27.500.000 đồng.
+
+    //  Các tháng tiếp theo tính tương tự như vậy cho đến khi hết nợ.
+    let soTienVay = +prompt("nhập số tiên vay:");
+    let soThangVay = +prompt("nhập số tháng gửi");
+    let soTienLai = +prompt("nhập số tiền lãi % :");
+
+    if (soTienVay > 0 || soThangVay > 0 || soTienLai > 0) {
+        let tienGocHangThang = soTienVay / soThangVay;
+        let tienLaiHangThang= soTienVay *(soTienLai/100)/soThangVay;
+        alert(`tổng số tiền phải trả: (${tienGocHangThang} + ${tienLaiHangThang} )VND`);
+    }
+</script>
+</body>
+</html>

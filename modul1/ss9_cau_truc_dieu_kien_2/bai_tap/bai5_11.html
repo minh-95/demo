@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chương trình tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+  //Thuế thu nhập cá nhân  =  Thu nhập tính thuế  x  Thuế suất
+  let tongLuong= parseFloat(prompt("nhập số tiền lương"));
+let thue;
+
+
+  if (tongLuong<5000000){
+      alert("không cần nộp thuế thu nhập cá nhân");
+  }else if (tongLuong <=10000000){
+    let thue=(tongLuong-5000000)*0.25;
+      alert(`thuế thu nhập cá nhân bậc 1 phải đóng là: ${thue} Việt Nam đồng`);
+
+  }else if(tongLuong <=18000000){
+      let thue=(tongLuong-10000000)*0.75;
+      alert(`thuế thu nhập cá nhân bậc 2 phải đóng là: ${thue} Việt Nam đồng`);
+  }else if(tongLuong <=32000000) {
+      let thue = (tongLuong - 15000000) * 1.95;
+      alert(`thuế thu nhập cá nhân bậc 3 phải đóng là: ${thue} Việt Nam đồng`);
+  }
+</script>
+</body>
+</html>
