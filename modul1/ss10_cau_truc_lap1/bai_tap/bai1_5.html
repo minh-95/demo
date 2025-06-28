@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let soLuong = 20;
+    let count = 0;
+    let sum = 0;
+    while (count < soLuong) {
+        document.write(a + "<br>");
+       sum += a;
+        let f =a + b;
+        a = b;
+        b = f;
+
+        count++;
+    }
+    alert("Tổng của 20 số đầu tiên trong dãy Fibonacci là: ");
+</script>
+</body>
+</html>
