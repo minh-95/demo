@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 8</title>
+</head>
+<body>
+<script>
+    let number = [100, 900, 3, 4, 19, 14, 34, 30, 20, 10];
+    for (let i = 0; i < number.length - 1; i++) {
+        for (let j = i + 1; j < number.length; j++) {
+            if (number[i] < number[j]) {
+                let temp = number[i];
+                number[i] = number[j];
+                number[j] = temp;
+            }
+        }
+    }
+    alert(number);
+</script>
+</body>
+</html>

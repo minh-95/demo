@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo hoặc nhập vào một mảng số nguyên gồm 10 phần tử</title>
+</head>
+<body>
+<script>
+    let arr = +prompt("nhập số bạn muốn");
+    let number = new Array(arr);
+    for (let i = 0; i < number.length; i++) {
+        number[i] = +prompt(`nhập phần tử ${i}`);
+    }
+    let V = +prompt("Nhập số nguyên V cần tìm:");
+    let found = false;
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] === V) {
+            found = true;
+            break;
+        }
+    }
+    if (found) {
+        alert("V is in the array");
+    } else {
+        alert("V is not in the array");
+    }
+</script>
+</body>
+</html>

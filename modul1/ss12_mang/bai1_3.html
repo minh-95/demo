@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo một mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let array = [100, 200, 3, 4, 19, 14, 34, 30, 20, 10];
+    let max = array[0];
+    let maxx = 0;
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            maxx = i;
+        }
+        sum += array[i];
+    }
+    let average = sum / array.length;
+    alert("số lớn nhất là:" + max);
+    alert("giá trị trung bình của mảng là:" + average);
+</script>
+</body>
+</html>

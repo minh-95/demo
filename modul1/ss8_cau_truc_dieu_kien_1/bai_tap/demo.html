@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>demo</title>
 </head>
 <body>
-$END$
+<script>
+    let x = +prompt("nhập cạnh x của tam giác");
+    let y = +prompt("nhập cạnh y của tam giác");
+    let z = +prompt("nhập cạnh z của tam giác");
+    if (x <= 0 || y <= 0 || z <= 0) {
+        alert("không phả là cạnh tam giác");
+    } else if ((x * x + y * y === z * z) || (y * y + z * z === x * x) || (z * z + x * x === y * y)) {
+        alert(" là tam giác vuông");
+    } else if ((x + y > z) || (y + z > x) || (z + x > y)) {
+        alert("chỉ là 3 cạnh của một tam giác");
+    }
+
+
+</script>
 </body>
 </html>

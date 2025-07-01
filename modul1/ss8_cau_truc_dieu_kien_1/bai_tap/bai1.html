@@ -7,8 +7,8 @@
 <body>
 </body>
 <script>
-    let canNang = parseFloat(+prompt("nhập cân nặng :(kg)"));
-    let chieuCao = parseFloat(+prompt("nhập chiều cao:(m)"));
+    let canNang = parseFloat(prompt("nhập cân nặng :(kg)"));
+    let chieuCao = parseFloat(prompt("nhập chiều cao:(m)"));
     let tinhTong = canNang / (chieuCao ^ 2);
     if (tinhTong < 18.5){
         alert(`Underweight ${tinhTong}BMI`);
