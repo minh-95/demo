@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+
+    let size = +prompt("Nhập kích thước của mảng:");
+    let array = new Array(size);
+    for (let i = 0; i < size; i++) {
+        array[i] = prompt(`Nhập ký tự thứ ${i + 1}:`);
+    }
+    document.write("Mảng ký tự là: <br>");
+    for (let i = 0; i < size; i++) {
+        document.write(`${array[i]} `);
+    }
+</script>
+</body>
+</html>

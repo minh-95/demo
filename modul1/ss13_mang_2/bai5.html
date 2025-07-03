@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+    let chuoi1 =+ prompt("Nhập chuỗi thứ nhất:");
+    let chuoi2 =+ prompt("Nhập chuỗi thứ hai:");
+    let giongNhau = true;
+    if (chuoi1.length !== chuoi2.length) {
+        giongNhau = false;
+    } else {
+        for (let i = 0; i < chuoi1.length; i++) {
+            if (chuoi1[i] !== chuoi2[i]) {
+                giongNhau = false;
+                break;
+            }
+        }
+    }
+
+    if (giongNhau) {
+        alert("Hai chuỗi giống nhau.");
+    } else {
+        alert("Hai chuỗi KHÔNG giống nhau.");
+    }
+</script>
+</body>
+</html>
