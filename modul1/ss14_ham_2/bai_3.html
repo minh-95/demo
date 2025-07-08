@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    function tinhGiaiThua(n) {
+        if (n < 0) {
+            return "Không có giai thừa cho số âm!";
+        }
+        let ketQua = 1;
+        for (let i = 1; i <= n; i++) {
+            ketQua *= i;
+        }
+        return ketQua;
+    }
+
+    let soNhap = +prompt("Nhập một số nguyên:");
+    let giaiThua = tinhGiaiThua(soNhap);
+    alert(`Giai thừa của ${soNhap} là: ${giaiThua}`);
+</script>
+</body>
+</html>

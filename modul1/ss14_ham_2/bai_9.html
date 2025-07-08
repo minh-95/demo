@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 9</title>
+</head>
+<body>
+<script>
+    function kiemTraKyTu(mang, kyTu) {
+        let dem = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === kyTu) {
+                dem++;
+            }
+        }
+        if (dem === 0) {
+            return -1;
+        } else {
+            return dem;
+        }
+    }
+
+    let mangKyTu = ['a', 'b', 'c', 'a', 'd','r','o'];
+    let kyTuCanTim = 'a';
+    let ketQua = kiemTraKyTu(mangKyTu, kyTuCanTim);
+
+   document.write(`Kết quả: ${ketQua}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+<script>
+    function doiCho(a, b) {
+        let tep = a;
+        a = b;
+        b = tep;
+        return [a, b];
+    }
+
+    let so1 = +prompt("Nhập số nguyên thứ nhất:");
+    let so2 = +prompt("Nhập số nguyên thứ hai:");
+    let [moiSo1, moiSo2] = doiCho(so1, so2);
+    alert(`Trước khi đổi: số thứ nhất = ${so1}, số thứ hai = ${so2}\nSau khi đổi: số thứ nhất = ${moiSo1},số thứ hai = ${moiSo2}`);
+</script>
+</body>
+</html>
